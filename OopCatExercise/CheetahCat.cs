@@ -3,14 +3,10 @@ namespace OopCatExercise
 {
     public class CheetahCat : Cat
     {
-        public CheetahCat()
-        {
-        }
+        public CheetahCat() { }
 
         public override string Eat()
-        {
-            return "Zzzzzzz";
-        }
+            => "Zzzzzzz";
     }
 }
 

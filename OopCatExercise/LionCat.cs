@@ -5,14 +5,10 @@ namespace OopCatExercise
     {
         public int AverageHeight = 1100;
 
-        public LionCat()
-        {
-        }
+        public LionCat() { }
 
         public override string Eat()
-        {
-            return "Roar!!!!";
-        }
+            => "Roar!!!!";
     }
 }
 

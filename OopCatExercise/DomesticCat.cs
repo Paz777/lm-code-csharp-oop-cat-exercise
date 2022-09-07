@@ -7,9 +7,7 @@ namespace OopCatExercise
         public string Setting = "domestic";
         public int AverageHeight = 23;
 
-        public DomesticCat()
-        {
-        }
+        public DomesticCat() { }
 
         public void GoToSleep()
         {
@@ -22,9 +20,7 @@ namespace OopCatExercise
         }
 
         public override string Eat()
-        {
-            return "Purrrrrrr";
-        }
+            => "Purrrrrrr";
     }
 }
 
