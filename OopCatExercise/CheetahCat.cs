@@ -1,13 +1,13 @@
 ﻿using System;
 namespace OopCatExercise
 {
-    public class CheetahCat
+    public class CheetahCat : Cat
     {
         public CheetahCat()
         {
         }
 
-        public string Eat()
+        public override string Eat()
         {
             return "Zzzzzzz";
         }

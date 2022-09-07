@@ -1,7 +1,7 @@
 ﻿using System;
 namespace OopCatExercise
 {
-    public class LionCat
+    public class LionCat : Cat
     {
         public int AverageHeight = 1100;
 
@@ -9,7 +9,7 @@ namespace OopCatExercise
         {
         }
 
-        public string Eat()
+        public override string Eat()
         {
             return "Roar!!!!";
         }

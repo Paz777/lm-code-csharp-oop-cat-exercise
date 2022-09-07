@@ -1,7 +1,7 @@
 ﻿using System;
 namespace OopCatExercise
 {
-    public class DomesticCat
+    public class DomesticCat : Cat
     {
         public Boolean IsAsleep { get; private set; }
         public string Setting = "domestic";
@@ -21,7 +21,7 @@ namespace OopCatExercise
             IsAsleep = false;
         }
 
-        public string Eat()
+        public override string Eat()
         {
             return "Purrrrrrr";
         }
