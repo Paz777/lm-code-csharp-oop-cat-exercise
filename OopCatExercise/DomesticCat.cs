@@ -20,6 +20,11 @@ namespace OopCatExercise
         {
             IsAsleep = false;
         }
+
+        public string Eat()
+        {
+            return "Purrrrrrr";
+        }
     }
 }
 

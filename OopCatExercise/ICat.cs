@@ -3,5 +3,5 @@ namespace OopCatExercise
 {
 	public interface ICat
 	{
-	}
+    }
 }

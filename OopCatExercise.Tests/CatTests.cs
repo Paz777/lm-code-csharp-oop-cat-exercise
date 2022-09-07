@@ -6,11 +6,15 @@ namespace OopCatExercise.Tests;
 public class CatTests
 {
     private DomesticCat domesticCat;
+    private LionCat lionCat;
+    private CheetahCat cheetahCat;
 
     [SetUp]
     public void SetUp()
     {
         domesticCat = new();
+        lionCat = new();
+        cheetahCat = new();
     }
 
     [Test]
@@ -39,40 +43,34 @@ public class CatTests
     {
         domesticCat.Setting.Should().Be("domestic");
     }
-
     
     [Test]
     public void DomesticCat_AverageHeight_Should_Be_Correct()
     {
         domesticCat.AverageHeight.Should().Be(23);
     }
-
-    /*
+    
     [Test]
     public void LionCat_AverageHeight_Should_Be_Correct()
     {
-        LionCat lionCat = new();
         lionCat.AverageHeight.Should().Be(1100);
     }
-
+    
     [Test]
     public void LionCat_Should_Make_A_Sound_When_Eat_Is_Called()
     {
-        LionCat lionCat = new();
         lionCat.Eat().Should().Be("Roar!!!!");
     }
-
+    
     [Test]
     public void CheetahCat_Should_Make_A_Sound_When_Eat_Is_Called()
     {
-        CheetahCat cheetahCat = new();
         cheetahCat.Eat().Should().Be("Zzzzzzz");
     }
-
+    
     [Test]
     public void DomesticCat_Should_Make_A_Sound_When_Eat_Is_Called()
     {
-        DomesticCat domesticCat = new();
         domesticCat.Eat().Should().Be("Purrrrrrr");
-    }*/
+    }
 }
