@@ -10,17 +10,13 @@ namespace OopCatExercise
         public DomesticCat() { }
 
         public void GoToSleep()
-        {
-            IsAsleep = true;
-        }
+            => IsAsleep = true;
 
         public void WakeUp()
-        {
-            IsAsleep = false;
-        }
+            => IsAsleep = false;
 
         public override string Eat()
-            => "Purrrrrrr";
+            => new Random().Next(2) == 1 ? "Purrrrrrr" : "Purrrrrrr  It will do I suppose";
     }
 }
 
