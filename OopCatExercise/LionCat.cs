@@ -3,9 +3,7 @@ namespace OopCatExercise
 {
     public class LionCat : Cat
     {
-        public int AverageHeight = 1100;
-
-        public LionCat() { }
+        public LionCat() : base(1100, "wild") { }
 
         public override string Eat()
             => "Roar!!!!";

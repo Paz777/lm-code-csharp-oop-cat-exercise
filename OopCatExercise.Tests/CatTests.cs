@@ -49,7 +49,13 @@ public class CatTests
     {
         domesticCat.AverageHeight.Should().Be(23);
     }
-    
+
+    [Test]
+    public void LionCat_Setting_Should_Be_Wild()
+    {
+        lionCat.Setting.Should().Be("wild");
+    }
+
     [Test]
     public void LionCat_AverageHeight_Should_Be_Correct()
     {
@@ -61,7 +67,13 @@ public class CatTests
     {
         lionCat.Eat().Should().Be("Roar!!!!");
     }
-    
+
+    [Test]
+    public void CheetahCat_Setting_Should_Be_Wild()
+    {
+        cheetahCat.Setting.Should().Be("wild");
+    }
+
     [Test]
     public void CheetahCat_Should_Make_A_Sound_When_Eat_Is_Called()
     {

@@ -3,17 +3,7 @@ namespace OopCatExercise
 {
     public class DomesticCat : Cat
     {
-        public bool IsAsleep { get; private set; }
-        public string Setting = "domestic";
-        public int AverageHeight = 23;
-
-        public DomesticCat() { }
-
-        public void GoToSleep()
-            => IsAsleep = true;
-
-        public void WakeUp()
-            => IsAsleep = false;
+        public DomesticCat() : base (23, "domestic") { }
 
         public override string Eat()
             => new Random().Next(2) == 1 ? "Purrrrrrr" : "Purrrrrrr It will do I suppose";
