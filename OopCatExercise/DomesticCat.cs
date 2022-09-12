@@ -3,7 +3,7 @@ namespace OopCatExercise
 {
     public class DomesticCat : Cat
     {
-        public Boolean IsAsleep { get; private set; }
+        public bool IsAsleep { get; private set; }
         public string Setting = "domestic";
         public int AverageHeight = 23;
 
@@ -16,7 +16,7 @@ namespace OopCatExercise
             => IsAsleep = false;
 
         public override string Eat()
-            => new Random().Next(2) == 1 ? "Purrrrrrr" : "Purrrrrrr  It will do I suppose";
+            => new Random().Next(2) == 1 ? "Purrrrrrr" : "Purrrrrrr It will do I suppose";
     }
 }
 
